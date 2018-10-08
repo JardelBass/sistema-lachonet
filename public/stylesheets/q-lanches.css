@@ -1,0 +1,123 @@
+body{
+    background-image: linear-gradient( to left, #26a69a, #a5d6a7 );
+}
+
+.contFL{
+    width: 360px;
+    height: auto;
+    min-height: 500px;
+    padding: 30px 40px 36px;
+    font-size: 16px;
+    margin: auto;
+    margin-top: 70px;
+    border: 2px solid #eeeeee;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.contFL h1{
+    font-size: 30px;
+}
+
+.texFL input{
+    color: #ffffff;
+}
+
+.cont-pedido{
+    margin-top: 90px;
+}
+.cont-pedido-select{
+    background-color: #ffffff;
+    padding: 1px 10px;
+    border-radius: 5px;
+}
+.cont-pedido-select i{
+    margin-top: 5px;
+}
+
+.list-pedido{
+    background-color: #ffffff;
+    padding: 30px 10px;
+    border-radius: 5px;
+}
+.bot-addP button{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.list-pedido-th{
+    width: 20%;
+}
+
+.nav-top button{
+    margin-top: 10px;
+}
+
+.chip{
+    background-color: #ef5350;
+    color: #ffffff;
+    display: none;
+}
+
+label{
+    font-size: 15px;
+}
+
+.collapsible-body{
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.lista-p{
+    background-color: #26a69a;
+    padding: 10px 0px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.badge{
+    font-size: 30px;
+}
+
+.usar-icon{
+    margin-top: 3px;
+}
+
+.usar-icon, .usar-nema{
+    color: #000000;
+}
+
+.usar-nema{
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.pagination li{
+    text-align: left;
+}
+
+.waves-effect{
+    width: 100%;
+    height: 40px;
+}
+
+.text-li{
+    text-align: center;
+    height: 40px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 400px) {
+    .contFL{
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .contFL{
+        width: 300px;
+    }
+}

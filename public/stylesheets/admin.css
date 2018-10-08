@@ -1,0 +1,145 @@
+body{
+    background-image: linear-gradient( to left, #26a69a, #a5d6a7 );
+}
+
+.admin-nav{
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    background-color: #26a69a;
+}
+
+.admin-nav-p{
+    padding: 15px 0px;
+}
+
+.admin-nav-p ul{
+    margin-top: -10px;
+}
+
+.top-pd{
+    text-align: center;
+    height: 2000px;
+    overflow: hidden;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    padding-top: 60px; 
+    transition: 0.5s;
+    overflow-x: hidden;
+}
+
+.admin-cli{
+    padding: 15px 15px 5px 15px;
+    color: #00796b;
+    border-bottom: 2px solid #26a69a;
+}
+
+.admin-cli h1{
+    font-size: 25px;
+    margin-top: 5px;
+    
+}
+
+.admin-nav-b{
+    text-align: left;
+}
+
+.admin-nav-l{
+   position: relative;
+   top: 20px;
+}
+
+.btn-small{
+    text-align: left;
+}
+
+.admin-nav-p{
+    position: fixed;
+    left: 300px;
+}
+
+.admin-p{
+    position: fixed;
+    top: 70px;
+    
+}
+
+.admin-lc{
+    height: 50px;
+    padding: 15px;
+}
+
+.admin-pc{
+    background-color: #eceff1;
+    height: 480px;
+    border-radius: 3px;
+    resize: none;
+    overflow: hidden; 
+    overflow-x: hidden;
+}
+
+.admin-pc:hover{
+    overflow: auto; 
+}
+
+.admin-d{
+    margin-top: 20px;
+}
+
+.admin-dd{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 3px;
+    height: 480px; 
+}
+
+.admin-tp{
+    height: 210px;
+    resize: none;
+    overflow: hidden; 
+    overflow-x: hidden;
+}
+
+.admin-tp:hover{
+    overflow: auto; 
+}
+
+.admin-ppx{
+    background-color: #ffffff;
+    height: 480px;
+    border-radius: 3px;
+    resize: none;
+    overflow: hidden; 
+    overflow-x: hidden;
+}
+
+.admin-total{
+    padding: 10px;
+    height: 40px;
+}
+
+.admin-tp2{
+    height: 330px;
+    resize: none;
+    overflow: hidden; 
+    overflow-x: hidden;
+}
+
+.admin-tp2:hover{
+    overflow: auto; 
+}
+
+
+@media screen and (max-width: 400px) {
+    .contFL{
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .contFL{
+        width: 300px;
+    }
+}
