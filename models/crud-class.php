@@ -96,5 +96,14 @@
             $result->execute();
         }
 
+        public function atualisaValor($id, $conn,$valor){
+            $update = "UPDATE tabela_sale SET  sale_value=:valor WHERE sale_id=:id";
+
+            $result = $conn->prepare($update);
+            $result->bindParam(':valor',$valor, PDO::PARAM_STR);
+            $result->bindParam(':id',$id, PDO::PARAM_STR);
+            $result->execute();
+        }
+
     }
 ?>

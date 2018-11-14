@@ -11,13 +11,11 @@
                 <ul class="">
                     <li><a class="waves-effect waves-light btn-small col s12" href="?pagi=admin&&nav=pedidos"><i class="material-icons left">event_note</i>LISTA DE PEDIDOS</a></li>
                     <li><a class="waves-effect waves-light btn-small col s12" href="?pagi=admin&&nav=final"><i class="material-icons left">event_note</i>PEDIDOS FINALIZADO</a></li>
-                    <li><a class="waves-effect waves-light btn-small col s12" href="?pagi=admin&&nav=novo"><i class="material-icons left">add</i>NOVO PEDIDO</a></li>
                 </ul>
             </div>
             <div class="admin-nav-l">
                 <label>LANCHONETE</label>
                 <ul class="">
-                    <li><a class="waves-effect waves-light btn-small col s12" href="?pagi=admin&&nav=lanchonete"><i class="material-icons left">home</i>lANCHONETE</a></li>
                     <li><a class="waves-effect waves-light btn-small col s12" href="?pagi=admin&&nav=produtos"><i class="material-icons left">event_note</i>PRODUTOS</a></li>
                     <li><a class="waves-effect waves-light btn-small col s12" href="?pagi=admin&&nav=usuario"><i class="material-icons left">group</i>USUARIOS</a></li>
                     <li><a class="waves-effect waves-light btn-small col s12 red" href="?pagi=admin&sair"><i class="material-icons left">close</i>SAIR</a></li>

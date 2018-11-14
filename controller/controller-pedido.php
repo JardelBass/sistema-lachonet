@@ -34,19 +34,38 @@
     } 
 
     if(isset($_POST['salvar'])){
-        $mesa = $_SESSION['mesa'];
-        $atendente = $_SESSION['name'];
-        $valor = $_SESSION['valor'];
-        $pedido = $crud->salvarVenda($conn,$mesa,$atendente,$valor);
-        
-        
-        foreach($_SESSION['produtos'] as $list):
-            $crud->salvarPedido($conn, $pedido, $list);
-        endforeach;
-        
-        unset($_SESSION['produtos']);
-        unset($_SESSION['mesa']);
-        header("location: ?pagi=home");
+        if(!$_SESSION['mesa'] == ""){
+            $mesa = $_SESSION['mesa'];
+            $atendente = $_SESSION['name'];
+            $valor = $_SESSION['valor'];
+
+            $listaAt = $crud->listaVenda($conn);
+            while($lisAtx = $listaAt->FETCH(PDO::FETCH_OBJ)){
+                if($lisAtx->sale_status == "cosenha"){
+                    if($lisAtx->sale_table == $mesa){
+                        $id = $lisAtx->sale_id;
+                        $codigo = $lisAtx->sale_code;
+                        $valorT = $lisAtx->sale_value;
+                    }
+                }
+            }
+
+            if(!$codigo == ""){
+                $pedido = $codigo;
+                $valorTotal = $valorT + $valor; 
+                $crud->atualisaValor($id, $conn,$valorTotal);
+            }else{
+                $pedido = $crud->salvarVenda($conn,$mesa,$atendente,$valor);
+            }
+            
+            foreach($_SESSION['produtos'] as $list):
+                $crud->salvarPedido($conn, $pedido, $list);
+            endforeach;
+            
+            unset($_SESSION['produtos']);
+            unset($_SESSION['mesa']);
+            header("location: ?pagi=home");
+        }
     }
     
     if(isset($_REQUEST['volta'])){

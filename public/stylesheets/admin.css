@@ -108,6 +108,7 @@ body{
 
 .admin-ppx{
     background-color: #ffffff;
+    padding-top: 20px;
     height: 480px;
     border-radius: 3px;
     resize: none;

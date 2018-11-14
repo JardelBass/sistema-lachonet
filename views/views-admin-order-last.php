@@ -8,7 +8,7 @@
         while($listaVenda = $venda->FETCH(PDO::FETCH_OBJ)){
             if($listaVenda->sale_status == "enserado"){
         ?>
-        <a href="?pagi=admin&&nav=final&&id=<?= $listaVenda->sale_code?>" class="collection-item black-text "><i class="material-icons right">send</i>MESA: <?= $listaVenda->sale_table; ?></span></a>   
+        <a href="?pagi=admin&&nav=final&&id=<?= $listaVenda->sale_code?>" class="collection-item black-text " id="<?= $listaVenda->sale_code?>"><i class="material-icons right">send</i>MESA: <?= $listaVenda->sale_table; ?></span></a>   
         <?php }}}else{ ?>
             <div class="card-panel">
                 <span class="cinzento-text text-darken-2">Não a Pedido na lista.</span>
@@ -18,7 +18,9 @@
 </div>
 
 <div class="col s8 offset-s4 admin-d">
-    <?php if(isset($_GET['id'])){ ?>
+    <?php if(isset($_GET['id'])){ $id = $_GET['id']; ?>
+        <style><?= "#".$id ?>{background-color: #ffcdd2  ;}
+        </style>
         <div class="card-panel admin-lc red lighten-2 center-align">
             <span class="white-text text-darken-2">DADOS PEDIDO</span>
         </div>
